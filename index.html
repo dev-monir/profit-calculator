@@ -7,6 +7,13 @@
     <title>Profit Calculator</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
   </head>
   <body>
     <section>
@@ -15,14 +22,26 @@
           <div class="modal-header">
               <h5 class="modal-title">Profit Calculator</calculator</h5>
           </div>
-          <div class="modal-body">
-            <h4 class="text-center font__family-roboto font__weight-bold mt-10 mb-40 brk-library-rendered">Select the term of the deposit:</h4>
-            <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="true">For a Week</button>
-                <button class="nav-link" id="nav-weeks-tab" data-bs-toggle="tab" data-bs-target="#nav-weeks" type="button" role="tab" aria-controls="nav-weeks" aria-selected="false">For a weeks Pro</button>
-                <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">for a month</button>
-                <button class="nav-link" id="nav-months-tab" data-bs-toggle="tab" data-bs-target="#nav-months" type="button" role="tab" aria-controls="nav-months" aria-selected="false">for a month</button>
+          <div class="modal-body" style="margin-bottom: 2rem;">
+            <h4 class="text-center font__family-roboto font__weight-bold mt-10 mb-40 brk-library-rendered bg-text">Select the term of the deposit:</h4>
+            <nav class="nav-bar">
+              <div class="nav nav-tabs nav-items-ul" id="nav-tab" role="tablist">
+                <button class="nav-link btn-link active" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="true">
+                  <i class="far fa-rocket" aria-hidden="true"></i>
+                  <span>For two weeks</span>
+                </button>
+                <button class="nav-link btn-link" id="nav-weeks-tab" data-bs-toggle="tab" data-bs-target="#nav-weeks" type="button" role="tab" aria-controls="nav-weeks" aria-selected="false">
+                  <i class="far fa-trophy" aria-hidden="true"></i>
+                  <span>For two weeks - <b>PRO</b></span>
+                </button>
+                <button class="nav-link btn-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
+                  <i class="far fa-crown" aria-hidden="true"></i>
+                  <span>For a month</span>
+                </button>
+                <button class="nav-link btn-link" id="nav-months-tab" data-bs-toggle="tab" data-bs-target="#nav-months" type="button" role="tab" aria-controls="nav-months" aria-selected="false">
+                  <i class="far fa-gem" aria-hidden="true"></i>
+                  <span>For a month - <b>PRO</b></span>
+                </button>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -37,133 +56,176 @@
             </div>
             <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
             </div>
-                  <div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Accrued profit </h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="pr_sum"> 1000 </div></span>
-          <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i> </li>
-                          </ul>
-                        </div></div><div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Amount after the end of the deposit</h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="b_sum"> 1500 </div></span>
-          <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
-                          </ul>
-                        </div></div>
-                  
-                <a href="https://panel.worldcryptotarget.com/registration/" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
-                  
-                </div>
-              </div>
-              <!-- week pro content start here -->
-              <div class="tab-pane fade" id="nav-weeks" role="tabpanel" aria-labelledby="nav-weeks-tab">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="col-lg-6 col-sm-8 col-xs-10 offset-lg-3 offset-sm-2"><p style="font-family: 'Open Sans', sans-serif;text-align: center;font-weight: 400;font-size: 16px;margin-bottom: 16px;color: #333;">Enter the investment amount:</p><div class="group">
-                <input onkeyup="if(this.value>10000000){this.value='10000000';}else if(this.value<0){this.value='0';}" type="number" min="1500" max="50000000" required="required" oninput="fn7(this);" value="1500"><span class="highlight"></span>
-                <label>Investment amount</label>
-              </div></div>
-          
-            
-          <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
-          
-          
-          
-          
-                  </div>
-                  <div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Accrued profit </h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="7pr_sum"> 2500 </div></span>
-          <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i> </li>
-                          </ul>
-                        </div></div><div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Amount after the end of the deposit </h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="7b_sum"> 5000 </div></span>
-          <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
-                          </ul>
-                        </div></div>
-                  <a href="https://panel.worldcryptotarget.com/registration/" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
-                </div>
-              </div>
-              <!-- month content start here -->
-              <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="col-lg-6 col-sm-8 col-xs-10 offset-lg-3 offset-sm-2"><p style="font-family: 'Open Sans', sans-serif;text-align: center;font-weight: 400;font-size: 16px;margin-bottom: 16px;color: #333;">Enter the investment amount:</p><div class="group">
-                <input onkeyup="if(this.value>10000000){this.value='10000000';}else if(this.value<0){this.value='0';}" type="number" min="3000" max="50000000" required="required" oninput="fn14(this);" value="3000"><span class="highlight"></span>
-                <label>Investment amount</label>
-              </div></div>
-          
-            
-          <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
-          
-          
-          
-          
-                  </div>
-                  <div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Accrued profit </h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="14pr_sum"> 7000 </div></span>
-          <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i> </li>
-                          </ul>
-                        </div></div><div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Amount after the end of the deposit</h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="14b_sum"> 10000 </div></span>
-          <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
-                          </ul>
-                        </div></div>
-                  <a href="https://panel.worldcryptotarget.com/registration/" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
-                </div>
-              </div>
-              <!-- month pro content start here   -->
-              <div class="tab-pane fade" id="nav-months" role="tabpanel" aria-labelledby="nav-months-tab">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="col-lg-6 col-sm-8 col-xs-10 offset-lg-3 offset-sm-2"><p style="font-family: 'Open Sans', sans-serif;text-align: center;font-weight: 400;font-size: 16px;margin-bottom: 16px;color: #333;">Enter the investment amount:</p><div class="group">
-                <input onkeyup="if(this.value>10000000){this.value='10000000';}else if(this.value<0){this.value='0';}" type="number" min="5000" max="50000000" required="required" oninput="fn28(this);" value="5000"><span class="highlight"></span>
-                <label>Investment amount</label>
-              </div></div>
-          
-            
-          <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
-          
-          
-          
-          
-                  </div>
-                  <div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Accrued profit </h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="28pr_sum"> 15000 </div></span>
-          <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i> </li>
-                          </ul>
-                        </div></div><div class="col-lg-6"><div class="white-box">
-                          <h3 class="box-title">Amount after the end of the deposit </h3> 
-                          <ul class="list-inline two-part">
-                            <li><i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i></li>
-                            <li class="text-left" style="padding-top: 17px;"><span><div name="28b_sum"> 20000 </div></span>
-          <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
-                          </ul>
-                        </div></div>
-                  <a href="https://panel.worldcryptotarget.com/registration/" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
-                </div>
+              <div class="col-lg-6"><div class="white-box">
+                <h3 class="box-title">Accrued profit </h3> 
+                <ul class="list-inline two-part">
+                    <li>
+                      <i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i>
+                    </li>
+                    <li class="text-left" style="padding-top: 17px;">
+                      <span style="display: inline-block">
+                        <div name="pr_sum"> 1000 </div>
+                      </span>
+                      <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i>
+                    </li>
+                </ul>
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="white-box">
+              <h3 class="box-title">Amount after the end of the deposit</h3> 
+              <ul class="list-inline two-part">
+                <li>
+                    <i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i>
+                </li>
+                <li class="text-left" style="padding-top: 17px;">
+                  <span style="display: inline-block">
+                    <div name="b_sum"> 1500 </div>
+                  </span>
+                    <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign">
+                    </i>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <a href="#" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
           </div>
         </div>
+      <!-- week pro content start here -->
+        <div class="tab-pane fade" id="nav-weeks" role="tabpanel" aria-labelledby="nav-weeks-tab">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="col-lg-6 col-sm-8 col-xs-10 offset-lg-3 offset-sm-2">
+                <p style="font-family: 'Open Sans', sans-serif;text-align: center;font-weight: 400;font-size: 16px;margin-bottom: 16px;color: #333;">Enter the investment amount:</p><div class="group">
+                <input onkeyup="if(this.value>10000000){this.value='10000000';}else if(this.value<0){this.value='0';}" type="number" min="1500" max="50000000" required="required" oninput="fn7(this);" value="1500"><span class="highlight"></span>
+                <label>Investment amount</label>
+              </div>
+            </div>
+          <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
+        </div>
+        <div class="col-lg-6"><div class="white-box">
+          <h3 class="box-title">Accrued profit </h3> 
+            <ul class="list-inline two-part">
+              <li>
+                <i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i>
+              </li>
+              <li class="text-left" style="padding-top: 17px;">
+                <span style="display: inline-block">
+                  <div name="7pr_sum"> 2500 </div>
+                </span>
+                <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i>
+              </li>
+            </ul>
+        </div></div><div class="col-lg-6"><div class="white-box">
+          <h3 class="box-title">Amount after the end of the deposit </h3> 
+          <ul class="list-inline two-part">
+          <li>
+            <i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i>
+          </li>
+          <li class="text-left" style="padding-top: 17px;">
+            <span style="display: inline-block">
+              <div name="7b_sum"> 5000 </div>
+            </span>
+          <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
+          </ul>
+        </div>
       </div>
-    </section>
+        <a href="#" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
+      </div>
+    </div>
+    <!-- month content start here -->
+    <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="col-lg-6 col-sm-8 col-xs-10 offset-lg-3 offset-sm-2"><p style="font-family: 'Open Sans', sans-serif;text-align: center;font-weight: 400;font-size: 16px;margin-bottom: 16px;color: #333;">Enter the investment amount:</p><div class="group">
+            <input onkeyup="if(this.value>10000000){this.value='10000000';}else if(this.value<0){this.value='0';}" type="number" min="3000" max="50000000" required="required" oninput="fn14(this);" value="3000"><span class="highlight"></span>
+              <label>Investment amount</label>
+          </div>
+        </div>
+        <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
+      </div>
+      <div class="col-lg-6"><div class="white-box">
+        <h3 class="box-title">Accrued profit </h3> 
+        <ul class="list-inline two-part">
+            <li>
+              <i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i>
+            </li>
+            <li class="text-left" style="padding-top: 17px;">
+              <span style="display: inline-block">
+                <div name="14pr_sum"> 7000 </div>
+              </span>
+              <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="white-box">
+        <h3 class="box-title">Amount after the end of the deposit</h3> 
+          <ul class="list-inline two-part">
+            <li>
+              <i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i>
+            </li>
+            <li class="text-left" style="padding-top: 17px;">
+              <span style="display: inline-block">
+                <div name="14b_sum"> 10000 </div>
+              </span>
+              <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
+          </ul>
+      </div>
+    </div>
+    <a href="#" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
+</div>
+</div>
+<!-- month pro content start here   -->
+<div class="tab-pane fade" id="nav-months" role="tabpanel" aria-labelledby="nav-months-tab">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="col-lg-6 col-sm-8 col-xs-10 offset-lg-3 offset-sm-2">
+      <p style="font-family: 'Open Sans', margin-top: 20px!important; sans-serif;text-align: center;font-weight: 400;font-size: 16px;margin-bottom: 18px; color: #333;">Enter the investment amount:</p><div class="group">
+        <input onkeyup="if(this.value>10000000){this.value='10000000';}else if(this.value<0){this.value='0';}" type="number" min="5000" max="50000000" required="required" oninput="fn28(this);" value="5000"><span class="highlight"></span>
+        <label>Investment amount</label>
+      </div>
+    </div>
+    <h4 class="title__divider title__divider--chevron font__size-16 font__weight-normal font__family-montserrat line__height-24 text-center brk-library-rendered" data-brk-library="component__dividers"><span class="title__divider__wrapper">Personal information on the deposit:<span class="line brk-base-bg-gradient-chevron-pseudo"></span></span></h4>
+  </div>
+  <div class="col-lg-6">
+    <div class="white-box">
+      <h3 class="box-title">Accrued profit </h3> 
+        <ul class="list-inline two-part">
+          <li>
+            <i class="fas fa-percent" style="font-size: 50px;color: #14c314;"></i>
+          </li>
+          <li class="text-left" style="padding-top: 17px;">
+            <span style="display: inline-block">
+              <div name="28pr_sum"> 15000 </div>
+            </span>
+          <i class="fas fa-dollar-sign" style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;"></i> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="white-box">
+        <h3 class="box-title">Amount after the end of the deposit </h3> 
+          <ul class="list-inline two-part">
+            <li>
+              <i class="fas fa-chart-pie" style="font-size: 50px;color: orange;"></i>
+            </li>
+            <li class="text-left" style="padding-top: 17px;">
+              <span style="display: inline-block">
+                <div name="28b_sum"> 20000 </div>
+              </span>
+              <i style="font-size: 17px;color: #01c292;padding-top: 7px;padding-left: 4px;" class="fas fa-dollar-sign"></i> </li>
+          </ul>
+          </div>
+        </div>
+        <a href="#" class="btn btn-prime btn-md border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200 brk-library-rendered" data-brk-library="component__button" style="margin: auto;margin-top: 31px;"><i class="fa fa-trophy icon-inside" aria-hidden="true"></i> <span class="before"></span><span class="after"></span><span class="border-btn"></span>Go to investing now</a>  
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
     <script type="text/javascript">
       function fn(that) {
         var v = that.value;
